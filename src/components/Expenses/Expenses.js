@@ -1,7 +1,7 @@
 import React from 'react'
 import './Expenses.css'
 import ExpenseItem from './ExpenseItem';
-import Card from './Card';
+import Card from '../UI/Card';
 
 const Expenses = (props) => {
   return (
@@ -13,6 +13,7 @@ const Expenses = (props) => {
               />
       </Card>
   )
+  
 }
 
 export default Expenses
