@@ -1,15 +1,17 @@
 import React from 'react'
 import './Expenses.css'
-import ExpenseItem from './ExpenseItem'
+import ExpenseItem from './ExpenseItem';
+import Card from './Card';
 
 const Expenses = (props) => {
   return (
-      <div className="expenses">
+      <Card className="expenses">
            <ExpenseItem
-        title={props.items[0].title} 
-        amount={props.items[0].amount} 
-        date={props.items[0].date} />
-    </div>
+              title={props.items[0].title} 
+              amount={props.items[0].amount} 
+              date={props.items[0].date}
+              />
+      </Card>
   )
 }
 
